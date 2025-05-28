@@ -8,6 +8,7 @@ do
     echo "1. addition"
     echo "2. subtraction"
     echo "3. multiplication"
+    echo "4. division"
     echo "enter choice: "
     read choice
 
@@ -26,7 +27,12 @@ do
         ;;
     3)
         res=`expr $num1 \* $num2`
-        echo "subtraction: $res"
+        echo "Multiplication: $res"
+        ;;
+
+    4)
+        res=`expr $num1 / $num2`
+        echo "Division: $res"
         ;;
 
     *)
