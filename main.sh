@@ -7,6 +7,7 @@ do
     echo "0. exit"
     echo "1. addition"
     echo "2. subtraction"
+    echo "3. multiplication"
     echo "enter choice: "
     read choice
 
@@ -23,6 +24,11 @@ do
         res=`expr $num1 - $num2`
         echo "subtraction: $res"
         ;;
+    3)
+        res=`expr $num1 \* $num2`
+        echo "subtraction: $res"
+        ;;
+
     *)
         echo "invalid choice"
     esac
