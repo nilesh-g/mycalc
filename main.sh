@@ -5,6 +5,7 @@ read num2
 while [ 1 ]
 do
     echo "0. exit"
+    echo "1. addition"
     echo "enter choice: "
     read choice
 
@@ -12,6 +13,10 @@ do
     0)
         echo "bye!"
         exit
+        ;;
+    1)
+        res=`expr $num1 + $num2`
+        echo "addition: $res"
         ;;
     *)
         echo "invalid choice"
