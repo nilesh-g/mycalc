@@ -6,6 +6,7 @@ while [ 1 ]
 do
     echo "0. exit"
     echo "1. addition"
+    echo "2. subtraction"
     echo "enter choice: "
     read choice
 
@@ -17,6 +18,10 @@ do
     1)
         res=`expr $num1 + $num2`
         echo "addition: $res"
+        ;;
+    2)
+        res=`expr $num1 - $num2`
+        echo "subtraction: $res"
         ;;
     *)
         echo "invalid choice"
